@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class JPD102 {
+
+	static int evenOrZero(String a) {
+		try {
+			
+			Integer b = Integer.parseInt(a);
+			return (b%2==0) ? b : 0;
+		} catch (Exception e) {
+			// TODO: handle exception
+
+			return 0;
+		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		try {
+			int a = evenOrZero(sc.next()) + evenOrZero(sc.next());
+
+			System.out.println(a);
+			// TO DO
+
+		} catch (Exception ex) {
+
+			// TO DO
+
+		}
+
+		// TO DO
+
+	}
+}
